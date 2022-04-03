@@ -21,6 +21,14 @@
         "info": ""
     },
     {
+        "id": "65130dec841d7213",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
@@ -3387,6 +3395,19 @@
                 "516084f4.cd307c",
                 "e95da13a.0029a"
             ]
+        ]
+    },
+    {
+        "id": "0766d2added735e4",
+        "type": "complete",
+        "z": "65130dec841d7213",
+        "name": "",
+        "scope": [],
+        "uncaught": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            []
         ]
     }
 ]
