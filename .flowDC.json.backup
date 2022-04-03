@@ -21,14 +21,6 @@
         "info": ""
     },
     {
-        "id": "7cb80e430e23cede",
-        "type": "tab",
-        "label": "Test",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
