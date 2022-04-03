@@ -32,22 +32,27 @@
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.0.10",
+        "broker": "192.168.20.162",
         "port": "1883",
         "clientid": "Node-RED",
+        "autoConnect": true,
         "usetls": false,
-        "compatmode": true,
+        "protocolVersion": "4",
         "keepalive": "60",
         "cleansession": true,
         "birthTopic": "",
         "birthQos": "0",
         "birthPayload": "",
+        "birthMsg": {},
         "closeTopic": "",
         "closeQos": "0",
         "closePayload": "",
+        "closeMsg": {},
         "willTopic": "",
         "willQos": "0",
-        "willPayload": ""
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
     },
     {
         "id": "25e0d20d.12eefe",
@@ -144,7 +149,8 @@
                 "primary": "indigo",
                 "accents": "blue",
                 "warn": "red",
-                "background": "grey"
+                "background": "grey",
+                "palette": "light"
             }
         },
         "site": {
@@ -374,6 +380,8 @@
         "qos": "0",
         "datatype": "json",
         "broker": "fa600c20.8a9c9",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 80,
         "y": 180,
