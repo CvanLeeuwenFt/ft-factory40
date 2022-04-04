@@ -2528,6 +2528,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 140,
         "wires": [
@@ -2681,10 +2684,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "{\"cmd\":\"stop\"}",
         "payloadType": "json",
         "topic": "",
+        "topicType": "str",
         "x": 250,
         "y": 300,
         "wires": [
@@ -3121,10 +3126,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "{}",
         "payloadType": "json",
         "topic": "f/o/state/ack",
+        "topicType": "str",
         "x": 250,
         "y": 560,
         "wires": [
@@ -3223,6 +3230,15 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3261,6 +3277,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 260,
         "wires": [
@@ -3288,6 +3307,11 @@
         "topic": "c/bme680",
         "qos": "0",
         "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "fa600c20.8a9c9",
         "x": 700,
         "y": 160,
@@ -3298,6 +3322,15 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3336,6 +3369,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 160,
         "wires": [
@@ -3363,6 +3399,18 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "{\"on\":true,\"fps\":2}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3401,6 +3449,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 360,
         "wires": [
