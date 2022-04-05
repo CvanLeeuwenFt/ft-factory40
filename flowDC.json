@@ -3418,7 +3418,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":0.1}",
+        "payload": "{\"on\":true,\"fps\":0.01}",
         "payloadType": "json",
         "x": 130,
         "y": 360,
