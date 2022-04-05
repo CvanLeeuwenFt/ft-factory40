@@ -2480,6 +2480,11 @@
         "topic": "o/ptu",
         "qos": "0",
         "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "fa600c20.8a9c9",
         "x": 690,
         "y": 140,
@@ -3244,9 +3249,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"period\":3}",
+        "payload": "{\"period\":20}",
         "payloadType": "json",
-        "x": 100,
+        "x": 110,
         "y": 260,
         "wires": [
             [
@@ -3336,9 +3341,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"period\":3}",
+        "payload": "{\"period\":10}",
         "payloadType": "json",
-        "x": 100,
+        "x": 110,
         "y": 160,
         "wires": [
             [
@@ -3401,13 +3406,10 @@
         "name": "",
         "props": [
             {
-                "p": "payload",
-                "v": "{\"on\":true,\"fps\":2}",
-                "vt": "json"
+                "p": "payload"
             },
             {
                 "p": "topic",
-                "v": "",
                 "vt": "str"
             }
         ],
@@ -3416,9 +3418,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":2}",
+        "payload": "{\"on\":true,\"fps\":0.1}",
         "payloadType": "json",
-        "x": 120,
+        "x": 130,
         "y": 360,
         "wires": [
             [
@@ -3452,12 +3454,186 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 470,
         "y": 360,
         "wires": [
             [
                 "516084f4.cd307c",
                 "e95da13a.0029a"
+            ]
+        ]
+    },
+    {
+        "id": "645298b902fb7d61",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\":false,\"fps\":0}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "edbc2440.62c248"
+            ]
+        ]
+    },
+    {
+        "id": "c61866f0e66ffcb3",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\":true,\"fps\":2.0}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "edbc2440.62c248"
+            ]
+        ]
+    },
+    {
+        "id": "e05399cf5b49c333",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\":true,\"fps\":1.5}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "edbc2440.62c248"
+            ]
+        ]
+    },
+    {
+        "id": "59a8004a51d01103",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\":true,\"fps\":0.5}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "edbc2440.62c248"
+            ]
+        ]
+    },
+    {
+        "id": "e074bf433a8c757e",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"period\":0}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "12f2398c.32eac6"
+            ]
+        ]
+    },
+    {
+        "id": "31db8d17de875f22",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"period\":0}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "e12a63d7.f1f0b"
             ]
         ]
     },
