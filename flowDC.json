@@ -2480,6 +2480,11 @@
         "topic": "o/ptu",
         "qos": "0",
         "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "fa600c20.8a9c9",
         "x": 690,
         "y": 140,
@@ -3413,9 +3418,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":0}",
+        "payload": "{\"on\":true,\"fps\":0.1}",
         "payloadType": "json",
-        "x": 120,
+        "x": 130,
         "y": 360,
         "wires": [
             [
@@ -3506,9 +3511,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":2}",
+        "payload": "{\"on\":true,\"fps\":2.0}",
         "payloadType": "json",
-        "x": 120,
+        "x": 130,
         "y": 460,
         "wires": [
             [
@@ -3535,9 +3540,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":3}",
+        "payload": "{\"on\":true,\"fps\":1.5}",
         "payloadType": "json",
-        "x": 100,
+        "x": 130,
         "y": 420,
         "wires": [
             [
@@ -3564,9 +3569,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"on\":true,\"fps\":1}",
+        "payload": "{\"on\":true,\"fps\":0.5}",
         "payloadType": "json",
-        "x": 140,
+        "x": 150,
         "y": 520,
         "wires": [
             [
