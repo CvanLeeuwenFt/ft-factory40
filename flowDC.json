@@ -3604,6 +3604,35 @@
         ]
     },
     {
+        "id": "31db8d17de875f22",
+        "type": "inject",
+        "z": "a242b4e6.dbec38",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"period\":0}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "e12a63d7.f1f0b"
+            ]
+        ]
+    },
+    {
         "id": "0766d2added735e4",
         "type": "complete",
         "z": "65130dec841d7213",
