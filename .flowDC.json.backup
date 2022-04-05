@@ -32,22 +32,27 @@
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.0.10",
+        "broker": "192.168.20.162",
         "port": "1883",
         "clientid": "Node-RED",
+        "autoConnect": true,
         "usetls": false,
-        "compatmode": true,
+        "protocolVersion": "4",
         "keepalive": "60",
         "cleansession": true,
         "birthTopic": "",
         "birthQos": "0",
         "birthPayload": "",
+        "birthMsg": {},
         "closeTopic": "",
         "closeQos": "0",
         "closePayload": "",
+        "closeMsg": {},
         "willTopic": "",
         "willQos": "0",
-        "willPayload": ""
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
     },
     {
         "id": "25e0d20d.12eefe",
@@ -144,7 +149,8 @@
                 "primary": "indigo",
                 "accents": "blue",
                 "warn": "red",
-                "background": "grey"
+                "background": "grey",
+                "palette": "light"
             }
         },
         "site": {
@@ -374,6 +380,8 @@
         "qos": "0",
         "datatype": "json",
         "broker": "fa600c20.8a9c9",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 80,
         "y": 180,
@@ -818,6 +826,8 @@
         "qos": "0",
         "datatype": "json",
         "broker": "fa600c20.8a9c9",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 70,
         "y": 1060,
@@ -834,14 +844,14 @@
         "type": "debug",
         "z": "d99ca802.0da3f8",
         "name": "raw",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
         "x": 290,
-        "y": 1020,
+        "y": 1000,
         "wires": []
     },
     {
@@ -852,6 +862,9 @@
         "func": "msg.payload = msg.payload.data;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 290,
         "y": 1100,
         "wires": [
@@ -2515,6 +2528,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 140,
         "wires": [
@@ -2668,10 +2684,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "{\"cmd\":\"stop\"}",
         "payloadType": "json",
         "topic": "",
+        "topicType": "str",
         "x": 250,
         "y": 300,
         "wires": [
@@ -3108,10 +3126,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "{}",
         "payloadType": "json",
         "topic": "f/o/state/ack",
+        "topicType": "str",
         "x": 250,
         "y": 560,
         "wires": [
@@ -3210,6 +3230,15 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3248,6 +3277,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 260,
         "wires": [
@@ -3275,6 +3307,11 @@
         "topic": "c/bme680",
         "qos": "0",
         "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "fa600c20.8a9c9",
         "x": 700,
         "y": 160,
@@ -3285,6 +3322,15 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3323,6 +3369,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 160,
         "wires": [
@@ -3350,6 +3399,18 @@
         "type": "inject",
         "z": "a242b4e6.dbec38",
         "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "{\"on\":true,\"fps\":2}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -3388,6 +3449,9 @@
         "func": "var ts = new Date().toISOString();\nmsg.payload[\"ts\"] = ts;\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 490,
         "y": 360,
         "wires": [
