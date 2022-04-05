@@ -2967,10 +2967,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "{\"cmd\":\"relmove_left\",\"degree\":10}",
         "payloadType": "json",
         "topic": "",
+        "topicType": "str",
         "x": 250,
         "y": 140,
         "wires": [
@@ -3377,7 +3379,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 470,
         "y": 160,
         "wires": [
             [
@@ -3454,7 +3456,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 490,
         "y": 360,
         "wires": [
             [
