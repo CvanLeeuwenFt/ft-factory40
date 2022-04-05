@@ -3244,9 +3244,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"period\":1}",
+        "payload": "{\"period\":20}",
         "payloadType": "json",
-        "x": 100,
+        "x": 110,
         "y": 260,
         "wires": [
             [
