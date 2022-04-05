@@ -1,6 +1,6 @@
 {
     "name": "DrentheCol1",
-    "description": "Tests for Drenths College",
+    "description": "Tests for Drenthe College",
     "version": "0.0.1",
     "dependencies": {},
     "node-red": {
