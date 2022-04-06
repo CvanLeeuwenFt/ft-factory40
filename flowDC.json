@@ -3487,7 +3487,7 @@
         "payload": "{\"on\":false,\"fps\":0}",
         "payloadType": "json",
         "x": 130,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "edbc2440.62c248"
@@ -3573,7 +3573,7 @@
         "topic": "",
         "payload": "{\"on\":true,\"fps\":0.5}",
         "payloadType": "json",
-        "x": 150,
+        "x": 130,
         "y": 520,
         "wires": [
             [
