@@ -32,7 +32,7 @@
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.0.10",
+        "broker": "192.168.20.162",
         "port": "1883",
         "clientid": "Node-RED",
         "autoConnect": true,
