@@ -21,14 +21,6 @@
         "info": ""
     },
     {
-        "id": "65130dec841d7213",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "fa600c20.8a9c9",
         "type": "mqtt-broker",
         "name": "",
