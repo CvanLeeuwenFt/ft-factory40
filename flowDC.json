@@ -178,29 +178,12 @@
         "id": "ce21f64.e83b008",
         "type": "ui_group",
         "name": "Sensorwerte",
-        "tab": "",
+        "tab": "61bbcb7d.153964",
         "order": 1,
         "disp": true,
         "width": "8",
-        "collapse": true
-    },
-    {
-        "id": "d71b3abf.e87f18",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "914cfe45.654c5",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "ce21f64.e83b008",
-        "order": 1,
-        "width": 1,
-        "height": 1
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "269d9bd9.87bff4",
@@ -246,19 +229,12 @@
         "id": "c2045506.d32c58",
         "type": "ui_group",
         "name": "Group 1",
-        "tab": "",
+        "tab": "61bbcb7d.153964",
         "order": 1,
         "disp": true,
-        "width": 6
-    },
-    {
-        "id": "bfb0ae98.80af7",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "c2045506.d32c58",
-        "order": 1,
-        "width": 1,
-        "height": 1
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "6e42fd2c.304104",
@@ -317,42 +293,6 @@
         "disp": true,
         "width": 8,
         "collapse": false
-    },
-    {
-        "id": "c1e37c6d.f404b",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "8069dfe.b488f2",
-        "order": 10,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "5e3ad3d7.7c6a3c",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "9403be56.33507",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c88e8cae.e64b4",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "9403be56.33507",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6cc53ff5.75928",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "631573fe.c997ec",
-        "order": 2,
-        "width": 1,
-        "height": 1
     },
     {
         "id": "fded58b3.4f8648",
