@@ -3638,18 +3638,5 @@
                 "e12a63d7.f1f0b"
             ]
         ]
-    },
-    {
-        "id": "0766d2added735e4",
-        "type": "complete",
-        "z": "65130dec841d7213",
-        "name": "",
-        "scope": [],
-        "uncaught": false,
-        "x": 170,
-        "y": 80,
-        "wires": [
-            []
-        ]
     }
 ]
