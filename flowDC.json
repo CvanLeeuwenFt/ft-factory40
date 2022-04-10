@@ -53,8 +53,9 @@
         "tab": "b7fce62d.102898",
         "order": 2,
         "disp": true,
-        "width": 14,
-        "collapse": true
+        "width": "14",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "61bbcb7d.153964",
@@ -202,8 +203,9 @@
         "tab": "b7fce62d.102898",
         "order": 3,
         "disp": true,
-        "width": 14,
-        "collapse": true
+        "width": "14",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "e928c4b3.04eb18",
@@ -212,8 +214,9 @@
         "tab": "b7fce62d.102898",
         "order": 4,
         "disp": true,
-        "width": 14,
-        "collapse": true
+        "width": "14",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "e67f6a50.c23a18",
@@ -222,8 +225,9 @@
         "tab": "b7fce62d.102898",
         "order": 5,
         "disp": true,
-        "width": 14,
-        "collapse": true
+        "width": "14",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "c2045506.d32c58",
@@ -252,8 +256,9 @@
         "tab": "b7fce62d.102898",
         "order": 1,
         "disp": true,
-        "width": 14,
-        "collapse": true
+        "width": "14",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "a3a2c861.f57918",
